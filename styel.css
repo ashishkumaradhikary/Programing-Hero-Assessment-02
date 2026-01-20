@@ -9,16 +9,17 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #1A0B2E ;
+    background-color: #1A0B2E;
     height: 90px;
     border-bottom: 1px solid white;
 }
 
 .navbar .logo h2 {
     font-family: sans-serif;
-    font-size: 40px ;
+    font-size: 40px;
     color: white;
 }
+
 .navbar .logo h2 span {
     color: gold;
 }
@@ -34,20 +35,21 @@ body {
 .navbar .nav-btn button {
     height: 45px;
     width: 140px;
-    border-radius: 50px ;
+    border-radius: 50px;
     border: none;
     outline: none;
     background-color: #00FF88;
 }
 
-.navbar .nav-btn button:hover{
+.navbar .nav-btn button:hover {
     background-color: gold;
 }
+
 .navbar .nav-btn button a {
     text-decoration: none;
     font-family: sans-serif;
     font-size: 20px;
-    color : rgb(70, 3, 3);
+    color: rgb(70, 3, 3);
 }
 
 
@@ -104,16 +106,17 @@ body {
     border-radius: 50px;
 }
 
-.hero .hero-info button:hover{
+.hero .hero-info button:hover {
     background-color: #00FF88;
 }
+
 .hero .hero-info button a {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
     color: #1A0B2E;
-    font-size: 15px ;
+    font-size: 15px;
     gap: 10px;
     text-decoration: none;
 }
@@ -151,7 +154,7 @@ body {
     align-items: center;
 }
 
-.about .about-number .number-box{
+.about .about-number .number-box {
     text-align: center;
 }
 
@@ -171,9 +174,9 @@ body {
 /* Why Choose Section */
 
 .choose {
-   background-color: #230E3D;
-   height: 1100px; 
-   padding: 120px 200px 120px 200px;
+    background-color: #230E3D;
+    height: 1100px;
+    padding: 120px 200px 120px 200px;
 }
 
 .choose h1 {
@@ -194,7 +197,7 @@ body {
 .choose .choose-box .choose-box1 {
     grid-column: span 1;
     grid-row: span 2;
-    background-color: #351165 ;
+    background-color: #351165;
     padding: 110px 40px 110px 40px;
     border-radius: 20px;
 }
@@ -202,15 +205,16 @@ body {
 .choose .choose-box .choose-box2 {
     grid-column: span 2;
     grid-row: span 1;
-    background-color: #351165 ;
+    background-color: #351165;
     padding: 40px 40px 40px 40px;
     border-radius: 20px;
 
 }
+
 .choose .choose-box .choose-box3 {
     grid-column: span 2;
     grid-row: span 1;
-    background-color: #351165 ;
+    background-color: #351165;
     padding: 40px 40px 40px 40px;
     border-radius: 20px;
 }
@@ -218,7 +222,7 @@ body {
 .choose .choose-box .choose-box4 {
     grid-column: span 2;
     grid-row: span 1;
-    background-color: #351165 ;
+    background-color: #351165;
     padding: 40px 40px 40px 40px;
     border-radius: 20px;
 }
@@ -226,7 +230,7 @@ body {
 .choose .choose-box .choose-box5 {
     grid-column: span 1;
     grid-row: span 1;
-    background-color: #351165 ;
+    background-color: #351165;
     padding: 40px 40px 40px 40px;
     border-radius: 20px;
 }
@@ -251,7 +255,7 @@ body {
 /*  <!-- Featured Episodes Section --> */
 
 .feature-host {
-    height: 1200px ;
+    height: 1200px;
     background-color: #1A0B2E;
     padding: 120px 200px 120px 200px;
 }
@@ -309,14 +313,8 @@ body {
 
 .featured .featured-episode .clock img {
     height: 20px;
-    
+
 }
-
-.featured .featured-episode .clock p {
-    
-}
-
-
 
 
 /* <!-- Meet the Host Section --> */
@@ -351,6 +349,7 @@ body {
     font-size: 30px;
     color: white;
 }
+
 .the-host .host .host-info p {
     font-family: sans-serif;
     font-size: 18px;
@@ -401,10 +400,142 @@ body {
 
 .footer .icon .icon-box p {
     color: white;
-   margin-left: 15px;
+    margin-left: 15px;
 }
 
 .footer .copyright p {
     text-align: center;
     color: rgb(145, 145, 145);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsive Design */
+
+@media screen and (max-width: 576px) {
+
+    body {
+        width: 100%;
+    }
+
+    /* Navbar */
+
+    .navbar .nav-btn {
+        display: none;
+    }
+
+    .navbar .menu {
+        display: none;
+    }
+
+    /* About Section */
+
+    .about .about-info h1 {
+        font-size: 30px;
+    }
+
+    .about .about-info p {
+        width: 300px;
+    }
+
+    .about .about-number {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    /* Why Choose Section */
+
+    .choose {
+        padding: 5px;
+        height: 2000px;
+    }
+
+    .choose h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .choose .choose-box {
+        width: 300px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5px;
+    }
+
+    .choose .choose-box .choose-box1 {
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color: #351165;
+        border-radius: 20px;
+        padding: 30px 20px 30px 20px;
+    }
+
+    .choose .choose-box .choose-box2 {
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color: #351165;
+        border-radius: 20px;
+        padding: 30px 20px 30px 20px;
+    }
+
+    .choose .choose-box .choose-box3 {
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color: #351165;
+        border-radius: 20px;
+        padding: 30px 20px 30px 20px;
+    }
+
+    .choose .choose-box .choose-box4 {
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color: #351165;
+        border-radius: 20px;
+        padding: 30px 20px 30px 20px;
+    }
+
+    .choose .choose-box .choose-box5 {
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color: #351165;
+        border-radius: 20px;
+        padding: 30px 20px 30px 20px;
+    }
+
+    /* <!-- Feature and host section --> */
+
+    .feature-host {
+        padding: 5px;
+    }
+
+    .feature-host h1 {
+        font-size: 30px;
+    }
+
+    .featured {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .feature-host .featured .featured-episode {
+        
+        
+    }
+
+    .feature-host .featured .featured-episode iframe {
+        width: 320px;
+       
 }
